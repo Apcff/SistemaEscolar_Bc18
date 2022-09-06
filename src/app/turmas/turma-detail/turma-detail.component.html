@@ -1,0 +1,20 @@
+<mat-card
+  class="example-card"
+  *ngIf="turma$ | async as pessoa"
+>
+  <mat-card-header>
+    <div mat-card-avatar><mat-icon>account_circle</mat-icon></div>
+    <mat-card-title>{{ pessoa.nome }} </mat-card-title>
+    <mat-card-subtitle>{{ pessoa.email }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    src="https://cdn.diferenca.com/imagens/grafico-pizza-cke.jpg"
+    alt="Photo of a Shiba Inu"
+  />
+  <mat-card-content>
+    <p style="font-weight: bold;">Gráfico da turma</p>
+  </mat-card-content>
+</mat-card>
+
+
