@@ -1,0 +1,65 @@
+.table-wrapper{
+    overflow-x: auto;
+    max-width: 1070px;
+    min-width: 450px;
+    margin: 0 auto;
+}
+
+.mat-header-cell{
+    align-items: center;
+    min-width: 190px;
+}
+
+table th {
+    height: 60px;
+    background: #36304a;
+    color: #fff;
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background:lightgray;
+}
+
+.btn-add{
+    margin-top: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+
+}
+
+.bradius{
+    border-top-left-radius: 10px;
+}
+
+.bradius2{
+     border-top-right-radius:10px;
+}
+
+h2{
+    padding-top: 20px;
+    font-size: 42px;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+}
+
+.mouseIndicator:hover{
+    cursor: pointer;
+    }
+
+.buttonfab{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 12%;
+        margin-top: 15px;
+        padding-bottom:15px ;
+        position:sticky;
+        bottom:0;
+         z-index: 1;
+}
+
+mat-form-field{
+  width: 100%;
+}
