@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  height: 100%;
+  nav-down: 50%;
+
+}
+
+.sidenav {
+  width: 13rem;
+  background: linear-gradient(90deg, rgba(9, 71, 121, 1) 35% 100%);
+}
+
+img {
+  justify-content: center;
+  display: flex;
+  width: 50%;
+  height: 7rem;
+  margin: .8rem auto;
+
+}
+
+.sidenav a {
+  color: white;
+}
+
+.sidenav i {
+  margin-right: .6rem;
+}
+
+.menu {
+  margin: 1rem 0 0 1rem;
+  background: linear-gradient(90deg, rgba(9, 71, 121, 1) 35% 100%);
+}
