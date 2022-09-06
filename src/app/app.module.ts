@@ -1,26 +1,55 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { LoginComponent } from "./components/login/login.component";
+import { CoreModule } from "./core/core.module";
+import { interceptors } from "./interceptors/auth.interceptor";
+import { MaterialModule } from "./shared/material.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HotToastModule } from '@ngneat/hot-toast';
+import { HomeModule } from "./home/home.module";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { AlunosModule } from "./alunos/alunos.module";
+import { ProfessoresModule } from "./professores/professores.module";
+import { TurmasModule } from "./turmas/turmas.module";
+import { HttpClientModule } from "@angular/common/http";
+import { NavModule } from "./nav/nav.module";
+import { HeaderModule } from "./header/header.module";
+import { DashboardModule } from "./dashboard/dashboard.module";
 
-import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { LoginComponent } from './components/login/login.component';
-import { AppRoutingModule } from './app-routing.module';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import { NavComponent } from './components/nav/nav.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NavComponent,
   ],
+
   imports: [
     BrowserModule,
     NgbModule,
     AppRoutingModule,
-    MatFormFieldModule,
+    MaterialModule,
+    CoreModule,
+    BrowserAnimationsModule,
+    HotToastModule.forRoot(),
+    HomeModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AlunosModule,
+    ProfessoresModule,
+    TurmasModule,
+    HttpClientModule,
+    NavModule,
+    HeaderModule,
+    DashboardModule,
+
+
   ],
-  providers: [],
+  providers: [
+    interceptors
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
