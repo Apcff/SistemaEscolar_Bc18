@@ -1,0 +1,50 @@
+.div-img {
+    background-repeat: no-repeat;
+    background-position: center left 80%;
+    height: 561px;
+    margin-top: 0px;
+    padding-right: 50px;
+}
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 561px;
+}
+
+.form {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 50px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+.titulo {
+    margin: auto;
+    margin-bottom: 10px;
+}
+.checkbox-section{
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+button{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progressBar {
+    margin-bottom: 10%;
+}
+
+@media (max-width: 850px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+  }
+ 

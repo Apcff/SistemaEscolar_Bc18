@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="form">
+    <form [formGroup]="professorForm" (ngSubmit)="onSubmit()">
+      <h2 class="titulo">Novo professor</h2>
+      <section formArrayName="perfils" class="section checkbox-section">
+        <mat-checkbox class="margin" color="primary" formControlName="1">Professor</mat-checkbox>
+      </section>
+      <mat-form-field appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Nome do professor" formControlName="nome" required />
+        <mat-error *ngIf="professorForm.get('nome')?.errors?.['required']">Campo obrigatório</mat-error>
+        <mat-icon matPrefix>person</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Turma</mat-label>
+        <input matInput placeholder="Turma do professor" formControlName="turma" required />
+        <mat-error *ngIf="professorForm.get('Turma')?.errors?.['required']">Campo obrigatório</mat-error>
+        <mat-icon matPrefix>person</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email do professor" formControlName="email" type="email" required />
+        <mat-error *ngIf="professorForm.get('email')?.errors?.['required']">Campo obrigatório</mat-error>
+        <mat-icon matPrefix>email</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Formacao</mat-label>
+        <input matInput placeholder="Formacao do professor" formControlName="professor" required />
+        <mat-error *ngIf="professorForm.get('Professor')?.errors?.['required']">Campo obrigatório</mat-error>
+        <mat-icon matPrefix>person</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Data de criação</mat-label>
+        <input matInput placeholder="Data de criacao do professor" formControlName="data" required />
+        <mat-error *ngIf="professorForm.get('data')?.errors?.['required']">Campo obrigatório</mat-error>
+        <mat-icon matPrefix>person</mat-icon>
+      </mat-form-field>
+      <span class="mat-error" *ngIf="professorForm.get('perfils')?.errors?.['sometrue']">
+        Marque pelo menos uma função para o user
+      </span>
+      <mat-progress-bar class="progressBar" mode="determinate" [value]="valorProgresso"></mat-progress-bar>
+      <button mat-raised-button color="primary" [disabled]="professorForm.invalid">
+        Criar
+      </button>
+    </form>
+  </div>
+</div>
