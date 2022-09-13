@@ -2,22 +2,32 @@
   <mat-drawer #drawer class="sidenav" mode="side">
     <img src="../assets/img/2.jpeg" alt="Imagem de navegação">
     <mat-nav-list class="nav-list">
-      <a mat-list-item routerLink="./professores">
+
+      <a mat-list-item [routerLink]="['/professores']">
         <i class="material-icons">account_circle</i>
         Professores
       </a>
-      <a mat-list-item routerLink="alunos">
+
+      <a mat-list-item [routerLink]="['/alunos']">
         <i class="material-icons">person</i>
         Alunos
       </a>
-      <a mat-list-item routerLink="turmas">
-        <i class="material-icons">support</i>
+
+      <a mat-list-item [routerLink]="['/turmas']">
+        <i class="material-icons">person</i>
         Turmas
       </a>
-      <a mat-list-item routerLink="dashboard">
-        <i class="material-icons">dashboard</i>
-        Dashboard
+
+      <a mat-list-item [routerLink]="['/dashboard']">
+        <i class="material-icons">person</i>
+        Dashboards
       </a>
+
+      <a mat-list-item [routerLink]="['/home']">
+        <i class="material-icons">account_circle</i>
+        Sair
+      </a>
+
     </mat-nav-list>
   </mat-drawer>
   <div class="">
