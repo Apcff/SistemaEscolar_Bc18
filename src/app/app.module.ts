@@ -17,13 +17,16 @@ import { TurmasModule } from "./turmas/turmas.module";
 import { HttpClientModule } from "@angular/common/http";
 import { NavModule } from "./nav/nav.module";
 import { HeaderModule } from "./header/header.module";
-import { DashboardModule } from "./dashboard/dashboard.module";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+   
+
+  
+
   ],
 
   imports: [
@@ -43,7 +46,7 @@ import { DashboardModule } from "./dashboard/dashboard.module";
     HttpClientModule,
     NavModule,
     HeaderModule,
-    DashboardModule,
+    
 
 
   ],
