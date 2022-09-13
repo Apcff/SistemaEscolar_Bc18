@@ -7,6 +7,7 @@ export interface Pessoa {
     professor: string;
     aluno: string;
     dataCriacao: string;
+    descricao:string;
     acoes: string,
   }
   
