@@ -6,7 +6,6 @@ import { Aluno } from "src/app/core/models/aluno";
 import { AlunosService } from "src/app/services/alunos/alunos.service";
 
 
-
 @Component({
   selector: 'app-aluno-create',
   templateUrl: './aluno-create.component.html',
