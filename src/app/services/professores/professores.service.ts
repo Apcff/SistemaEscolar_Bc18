@@ -30,4 +30,7 @@ export class ProfessoresService {
   delete(id: number) {
     return this.http.delete(`${this.professoresUrl}/${id}`);
   }
+  findAllPendentes(): Observable<Professor[]> {
+    return this.http.get<Professor[]>(this.professoresUrl)
+  }
 }
