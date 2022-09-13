@@ -7,6 +7,7 @@ export interface Professor {
     perfis: string;
     formacao: string;
     dataCriacao: string,
+    descricao: string,
     acoes: string,
    
 
